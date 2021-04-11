@@ -345,3 +345,117 @@ div.footer h6 {
     font-size: 1rem;
     padding-top: 6rem;
 }
+
+.menu-toggle .bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+}
+
+@media screen and (max-width: 768px){
+    div.nav-bar{
+        position: relative;
+    }
+    ul.nav-links{
+        display: grid;
+        grid-template-columns: auto;
+        background: brown;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+    div.logo{
+        margin-left: 20px;
+    }
+    ul.nav-links.active{
+        background: rgba(0, 0, 0, 0.7);
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+       .nav-menu{
+        text-align: center;
+        line-height: 60px;
+        width: 100%;
+        display: table;
+    }
+       
+       .nav-menu:hover {
+        background-color: #f0f0f0;
+        color: #fff;
+        transition: all 0.4s ease-out;
+    }
+
+        div.navbar{
+        width: 100%;
+    }
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+    .menu-toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+    .menu-toggle:hover{
+        cursor: pointer;
+    }
+    #mobile-menu.is-active.bar:nth-child(2){
+        opacity: 0;
+    }
+     #mobile-menu.is-active.bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+     #mobile-menu.is-active.bar:nth-child(3){
+        transform: translateY(8px) rotate(-45deg);
+    }
+    
+    }
+
+
+@media screen and (max-width:600px) {
+  div.hero-section h3{
+     font-size: 20px; 
+     }
+}
+@media screen and (max-width:450px) {
+  div.hero-section h3{
+     font-size: 15px; 
+     }
+  div.hero-section p{
+    font-size: 6px;
+   }
+}
+@media screen and (max-width:380px) {
+  div.hero-section h3{
+     font-size: 10px; 
+     }
+}
+@media screen and (max-width: 850px){
+div.hero-background div{
+     height:50%;
+     }
+}
+@media screen and (max-width: 700px){
+div.hero-background div{
+     height:20%;
+     }
+ }
+
+@media screen and (max-width: 800px){
+div.snapshot-box-content {
+     flex-wrap: wrap;
+     justify-content: center;
+     }
+ }
+
+
